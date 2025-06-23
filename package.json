@@ -1,6 +1,6 @@
 {
   "name": "@singularitsas/octopus-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "bin/index.js",
   "description": "A CLI to generate krakend endpoints",
   "author": "Ernesto Luis Mosquera Heredia <ernesto.mosquera@singularit.co>",
@@ -16,11 +16,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/singularit/octopus-cli.git"
+    "url": "git+https://github.com/SingularItSAS/octopus-cli.git"
   },
-  "homepage": "https://github.com/singularit/octopus-cli#readme",
+  "homepage": "https://github.com/SingularItSAS/octopus-cli#readme",
   "bugs": {
-    "url": "https://github.com/singularit/octopus-cli/issues"
+    "url": "https://github.com/SingularItSAS/octopus-cli/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "prebuild": "rimraf bin",
@@ -53,6 +56,6 @@
     "typescript": "^4.5.5"
   },
   "bin": {
-    "octo-singular": "bin/index.js"
+    "singularit-octo": "./bin/index.js"
   }
 }
