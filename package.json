@@ -1,6 +1,6 @@
 {
   "name": "@singularitsas/octopus-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "bin/index.js",
   "description": "A CLI to generate krakend endpoints",
   "author": "Ernesto Luis Mosquera Heredia <ernesto.mosquera@singularit.co>",
