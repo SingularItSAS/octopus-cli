@@ -1,0 +1,60 @@
+openapi: 3.1.0
+info:
+  title: BackOffice Core operations API
+  description: This API provides endpoints for managing core operations in the BackOffice system.
+  version: 0.0.1
+servers:
+  - url: /api/backoffice-core
+    description: API context path
+tags:
+  - name: Authentication
+    description: Authentication API
+  - name: Users
+    description: APIs for managing user accounts
+paths:
+  /users:
+    get:
+      tags:
+        - Users
+      summary: Get all users with optional filtering
+      operationId: getAllUsers
+      parameters:
+        - name: page
+          in: query
+          description: Page number to retrieve
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: Authorization
+          in: header
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+    put:
+      tags:
+        - Users
+      summary: Update an existing user
+      operationId: updateUser
+      responses:
+        "200":
+          description: User updated successfully
+  /auth/token:
+    post:
+      tags:
+        - Authentication
+      summary: Get anonymous token
+      operationId: getToken
+      parameters:
+        - name: api-key
+          in: header
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Token successfully retrieved

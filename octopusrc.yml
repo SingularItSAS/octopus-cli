@@ -1,0 +1,12 @@
+octopus:
+  excludeAuth:
+    - auth_login
+    - auth_logout
+    - auth_public
+    - medicalRecords_patientTurn
+    - reports_authorizations
+    - sharedReports_authorization
+    - legacy_auth_login
+    - legacy_laboratory_results
+  output: ./test
+  config: ./test/config.json

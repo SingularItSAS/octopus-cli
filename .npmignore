@@ -1,0 +1,9 @@
+src/
+test/
+octopusrc.yml
+tsconfig*
+.prettierrc.js
+.nvmrc
+.eslintrc.js
+.eslintignore
+.editorconfig
